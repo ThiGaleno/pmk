@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(240, 240, 240);
+}
+.input-control input, select {
+    padding: 6px 16px;
+    border: 1px solid #aaa;
+    /* background-color: rgb(240, 240, 240);s */
+    color: #444;
+    width: 100%;
+    border-radius: 40px;
+}
+input:focus, select:focus{
+    outline: none;
+    border: seagreen 2px solid;
+}
+
+select {
+    background-color: white;
+    -webkit-appearance: none;
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  button[disabled]{
+      opacity: 0.6 !important;
+      cursor: default !important;
+  }
+.my-btn {
+    padding: 8px 10px;
+    width: 100%;
+    color: white;
+    background-color: seagreen;
+    border-radius: 40px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.card{
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.input-control{
+    margin: 10px 0px;
+}
+
+@media (min-width: 540px) {
+    .card{
+        width: 50%;
+        margin: 10px auto !important;
+    }
+}
